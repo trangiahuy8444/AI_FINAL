@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+#wrapper {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+  background-color: cadetblue;
+  text-align: right;
+}
+
+#navigation {
+  width: 100%;
+  height: 50px;
+  background-color:cadetblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navigation .logo{
+  width: 10%;
+  text-align: center;
+}
+
+#navigation .logo img{
+  width: 50%;
+  height: 50px;
+}
+#navigation .nav_2{
+  width: 80%;
+}
+#navigation .nav_2 ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navigation .nav_2 ul li{
+  padding: 10px;
+}
+
+#navigation .nav_2 ul li:hover {
+  background-color: burlywood;
+  border-radius: 10px; 
+}
+
+#navigation .nav_2 ul li a {
+  color: white;
+  /* padding: 10px; */
+  font-size: 20px;
+}
+
+#navigation .login{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation .login a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#main-content {
+  width: 100%;
+  /* height: 500px; */
+  display: flex;
+}
+
+#main-content #sidebar {
+  width: 10%;
+  /* height: 100%; */
+  background-color: cadetblue;
+}
+#main-content #sidebar ul {
+  margin: auto;
+  width: 100px;
+  margin-top: 20px;
+  position: fixed ;
+}
+#main-content #sidebar ul li {
+  background-color: burlywood;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
+#main-content #sidebar ul li:hover {
+  background-color: brown;
+}
+
+#main-content #sidebar ul li ul {
+  background-color: chocolate;
+  display: none;
+  position: absolute;
+}
+
+#main-content #sidebar ul li ul li{
+  background-color: chocolate;
+  border: none;
+}
+
+#main-content #sidebar ul li ul li a{
+  line-height: 30px;
+  display: block;
+  width: 100%;
+}
+
+#main-content #sidebar ul li:hover ul{
+  display: block;
+  margin-left: 95px;
+  width: 100px;
+  margin-top: -27px;  
+  border-radius: 10px;
+}
+
+
+#main-content #sidebar ul li a {
+  color: white;
+}
+
+#main-content #content {
+  width: 90%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#main-content .content_1 {
+  width: 100%;
+  height: 10%;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+}
+#main-content .content_1 h3 {
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#main-content .content_1 h3 span a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#main-content .content_2{
+  height: 100%;
+}
+
+#main-content .content_2 p {
+  padding: 10px;
+}
+
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: cadetblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
